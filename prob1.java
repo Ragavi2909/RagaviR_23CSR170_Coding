@@ -17,7 +17,8 @@ public class Prob1 {
         for(int i=1;i<arr.length;i++){
             if(arr[i]< max && arr[i]>secLarg){
                 secLarg = arr[i];
-            }
+            }else{
+                secLarg = -1;
         }
         System.out.print(secLarg);
     }
