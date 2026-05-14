@@ -1,0 +1,20 @@
+import java.util.*;
+public class prob4 {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int[] arr = new int[arr.length];
+        for(int i=0;i<arr.length;i++){
+            arr[i] = sc.nextInt();
+        }
+
+        int target = sc.nextInt();
+        for(int i=0;i<arr.length;i++){
+            for(int j=i+1;j<arr.length;j++){
+                if(arr[i]+arr[j]==target){
+                    return new int[] {arr[i],arr[j]};
+                }
+            }
+        }
+        return int[] {-1,-1};
+    }
+}
